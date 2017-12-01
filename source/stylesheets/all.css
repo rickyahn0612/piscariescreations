@@ -13,6 +13,16 @@ body {
   opacity: 0;
 }
 
+a {
+	color: white;
+	display: none;
+}
+
+span {
+	color: #cfcfcf;
+	display: none;
+}
+
 h1 {
   color: #fff;
   display: none;

@@ -3,7 +3,9 @@ title: Coming Soon
 ---
 
 .logo-container
-  = image_tag 'logo_symbol.jpg', style: 'width: 40%;', class: 'symbol'
-  = image_tag 'logo_words.png', style: 'width: 60%;', class: 'words'
+	= image_tag 'logo_symbol.jpg', style: 'width: 40%;', class: 'symbol'
+	= image_tag 'logo_words.png', style: 'width: 60%;', class: 'words'
 
-  %h1.coming-soon-txt Coming Soon
+	%h1.coming-soon-txt Coming Soon
+	%span Visit us at
+	= link_to 'https://piscaries.weebly.com/', 'https://piscaries.weebly.com/'

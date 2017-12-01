@@ -5,7 +5,7 @@ $(document).ready(function (e) {
   $('.symbol').animate({'opacity': 1, top: 0}, 2000, function(){
     $('.words').animate({'opacity': 1, top: 0}, 1000, function(){
 
-      $('.coming-soon-txt').fadeIn(1000);
+      $('.coming-soon-txt, span, a').fadeIn(2000);
     })
 
   })
