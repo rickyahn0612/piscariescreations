@@ -47,6 +47,9 @@
 #   end
 # end
 
+helpers do
+end
+
 set :css_dir, 'stylesheets'
 
 set :js_dir, 'javascripts'
@@ -69,4 +72,13 @@ configure :build do
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
+end
+
+activate :directory_indexes
+
+activate :contentful do |f|
+  f.space         = {piscaries_creations: 'dfwbkytkan1e'}
+  f.access_token  = 'ca31d0e8ffc0ce39f4dc93a8e641410afd76a79218324ef76375ba2f7c0bb11a'
+  f.cda_query     = f.cda_query = { limit: 1000 }
+  f.content_types = {pillows: 'pillows'}
 end
