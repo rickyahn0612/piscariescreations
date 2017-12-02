@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 body {
-  background: #1B2460;
+  background: #1B2460 !important;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 2.5px;
