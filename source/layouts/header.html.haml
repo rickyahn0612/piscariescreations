@@ -1,0 +1,50 @@
+.container-fluid.header
+  .col-12
+    .logo
+      = image_tag 'logo_long.png'
+  .col-12
+    .navbar
+      %ul
+        %li
+          = link_to 'PILLOWS'
+        %li
+          = link_to 'PLUSH'
+        %li
+          .dropdown
+            = link_to 'KEYCHAINS'
+            .dropdown-content
+              %ul
+                = link_to '' do   
+                  %li.shirt-container{style: 'margin-right: 200px; margin-top: 10px;'}
+                    Plush
+                    = image_tag 'sdadd_4.jpg'
+
+                = link_to '' do 
+                  %li.shirt-container
+                    Acrylic
+                    = image_tag 'ironmanbaru_orig.jpg'
+        %li
+          .dropdown
+            = link_to 'T-SHIRTS'
+            .dropdown-content
+              %ul
+                = link_to '' do   
+                  %li.shirt-container{style: 'margin-right: 200px; margin-top: 10px;'}
+                    Men
+                    = image_tag 'men_tshirt.jpg'
+
+                = link_to '' do 
+                  %li.shirt-container
+                    Woman
+                    = image_tag 'men_tshirt.jpg'
+        %li
+          = link_to 'BLOG'
+        %li
+          = link_to 'ABOUT'
+        %li
+          = link_to 'CONTACT'
+    = link_to '' do
+      .mobile-nav
+        %i.fa.fa-bars
+
+

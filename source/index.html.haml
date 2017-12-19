@@ -1,16 +1,59 @@
----
-title: Coming Soon
----
+#main-banner
+  .container
+    .row
+      .col-md-5
+        = image_tag 'men_tshirt_transparent.png', class: 'men-tshirt-image'
+        = image_tag 'woman_tshirt.png', class: 'woman-tshirt-image'
+        .mobile-content
+          .button
+            SHOP ALL SHIRTS
 
-.logo-container
-  = image_tag 'logo_symbol.jpg', style: 'width: 40%;', class: 'symbol'
-  = image_tag 'logo_words.png', style: 'width: 60%;', class: 'words'
+      .col-md-7
+        .banner-content 
+          %h1 NEW HOLIDAY ARRIVALS
+          %p 
+            Just in: supersoft sweaters, party-ready jewelry 
+            %br
+            and sneakers you won’t find anywhere else…
+          %br
+          .button
+            SHOP MEN
+          .button.woman-button
+            SHOP WOMAN
 
-  %h1.coming-soon-txt Coming Soon
-  %span Visit us at
-  = link_to 'https://piscaries.weebly.com/', 'https://piscaries.weebly.com/'
+#homepage-sub-content
+  .container
+    .row
+      .col-md-4
+        .product-container
+          = image_tag 'thorw_pillow.png'
+          .button
+            SHOP ALL PILLOWS
+      .col-md-4
+        .product-container{style: 'background: #5A87E4;'}
+          = image_tag 'thorw_pillow.png'
+          .button
+            SHOP ALL PILLOWS
+      .col-md-4
+        .product-container{style: 'background: #66CBF6'}
+          = image_tag 'thorw_pillow.png'
+          .button
+            SHOP ALL PILLOWS
 
-  -#- data.piscaries_creations.pillows.each do |id, image|
-    -#= image_tag image.pillow_image['url']
-
-      
+  .container
+    .best-seller
+      %h3 THIS MONTH’S BESTSELLERS
+      %p Our top styles to buy now and wear now.
+    .row.best-seller-products
+      .col-md-3
+        = link_to '' do
+          = image_tag 'revisi_orig.jpg'
+      .col-md-3
+        = link_to '' do
+          = image_tag 'ironmanbaru_orig.jpg'
+      .col-md-3
+        = link_to '' do
+          = image_tag 'superplsuhe_2_orig.jpg'
+      .col-md-3
+        = link_to '' do
+          = image_tag 'sdadd_4.jpg'
